@@ -1,0 +1,30 @@
+{
+  "accountAssociation": {
+    "header": "",
+    "payload": "",
+    "signature": ""
+  },
+  "frame": {
+    "version": "1",
+    "name": "PetriVerse AI",
+    "subtitle": "Built with Zara",
+    "description": "PetriVerse AI is a Base Mini App built with Zara.",
+    "iconUrl": "https://0co.to/images/zara-2.png",
+    "homeUrl": "https://41886a60cdf14fd98db22b65ac650c8f-ijfc.vercel.app",
+    "splashImageUrl": "https://41886a60cdf14fd98db22b65ac650c8f-ijfc.vercel.app/splash.png",
+    "splashBackgroundColor": "#000000",
+    "heroImageUrl": "https://41886a60cdf14fd98db22b65ac650c8f-ijfc.vercel.app/image.png",
+    "tagline": "PetriVerse AI",
+    "screenshotUrls": [
+      "https://41886a60cdf14fd98db22b65ac650c8f-ijfc.vercel.app/screenshot.png",
+      "https://41886a60cdf14fd98db22b65ac650c8f-ijfc.vercel.app/screenshot.png"
+    ],
+    "primaryCategory": "social",
+    "tags": [
+      "base",
+      "miniapp",
+      "onchainkit"
+    ],
+    "webhookUrl": "https://41886a60cdf14fd98db22b65ac650c8f-ijfc.vercel.app/api/webhook"
+  }
+}
