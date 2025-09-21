@@ -1,7 +1,6 @@
 'use client';
 
 import { useState, useEffect } from 'react';
-import { useMiniKit } from '@coinbase/minikit';
 import { PetCard } from '../components/PetCard';
 import { ChallengeSection } from '../components/ChallengeSection';
 import { CreatePetModal } from '../components/CreatePetModal';
@@ -11,7 +10,6 @@ import { Pet, Challenge, User } from '../lib/types';
 import { generatePet, mockChallenges, mockUser } from '../lib/mockData';
 
 export default function Home() {
-  const { context } = useMiniKit();
   const [user, setUser] = useState<User>(mockUser);
   const [pets, setPets] = useState<Pet[]>([]);
   const [challenges, setChallenges] = useState<Challenge[]>(mockChallenges);

@@ -2,15 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --bg: 220 20% 15%;
-  --accent: 30 90% 60%;
-  --primary: 220 80% 50%;
-  --surface: 220 20% 20%;
-  --text-primary: 0 0% 95%;
-  --text-secondary: 0 0% 70%;
-}
-
 * {
   box-sizing: border-box;
   padding: 0;
@@ -25,28 +16,29 @@ body {
 }
 
 body {
-  background: linear-gradient(135deg, #e8d5ff 0%, #ffd6cc 100%);
+  background: linear-gradient(135deg, hsl(280, 60%, 90%) 0%, hsl(20, 80%, 85%) 100%);
   min-height: 100vh;
 }
 
 @layer components {
   .btn-primary {
-    @apply bg-primary text-white px-4 py-2 rounded-md font-medium transition-all duration-200 hover:opacity-90 active:scale-95;
+    @apply bg-blue-600 text-white px-4 py-2 rounded-md font-medium transition-all duration-200 hover:bg-blue-700 active:scale-95;
   }
-  
+
   .btn-accent {
-    @apply bg-accent text-white px-4 py-2 rounded-md font-medium transition-all duration-200 hover:opacity-90 active:scale-95;
+    @apply bg-orange-500 text-white px-4 py-2 rounded-md font-medium transition-all duration-200 hover:bg-orange-600 active:scale-95;
   }
-  
+
   .card {
-    @apply bg-white/80 backdrop-blur-sm rounded-lg p-4 shadow-card;
+    @apply bg-white/80 backdrop-blur-sm rounded-lg p-4 shadow-lg;
   }
-  
+
   .pet-card {
     @apply bg-gradient-to-br from-purple-500/20 to-pink-500/20 backdrop-blur-sm rounded-lg p-4 border border-white/20;
   }
-  
+
   .challenge-button {
     @apply px-4 py-2 rounded-full text-sm font-medium transition-all duration-200 hover:scale-105 active:scale-95;
   }
 }
+
